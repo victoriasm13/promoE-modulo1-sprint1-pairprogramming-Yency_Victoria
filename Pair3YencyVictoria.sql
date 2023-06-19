@@ -42,3 +42,25 @@ CREATE TABLE zapatillas(id_zapatillas INT NOT NULL AUTO_INCREMENT,
 modelo VARCHAR(45) NOT NULL,
 color VARCHAR(45) NOT NULL,
 PRIMARY KEY (id_zapatillas));
+
+ALTER TABLE zapatillas
+ADD COLUMN marca VARCHAR(45) NOT NULL;
+
+ALTER TABLE zapatillas
+ADD COLUMN talla INT NOT NULL;
+
+ALTER TABLE empleados
+MODIFY COLUMN salario FLOAT;
+
+ALTER TABLE clientes
+DROP COLUMN pais; 
+
+ALTER TABLE clientes
+MODIFY COLUMN codigo_postal INT(5) NOT NULL;
+
+ALTER TABLE facturas
+ADD COLUMN total FLOAT NOT NULL;
+
+
+ALTER TABLE facturas
+ADD COLUMN total FLOAT NOT NULL;
